@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* QUIZ STYLING ********************************************************/
+/* STYLE FLEX CONTAINER */
+.question {
+    display: flex;
+    margin-top: 2em;
+}
+
+/* STYLE FLEX ITEM */
+    .answer-choice {
+    margin: 5px;
+}
+/***********************************************************************/
+
+/* NAV BAR STYLING *****************************************************/
+nav {
+    height: 100%;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    background-color: rgb(208, 208, 228);
+    width: 12.5em;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgb(208, 208, 228);
+}
+
+.list {
+    border: none;
+
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 0.05em solid black;
+    border-top: 0.05em solid black;
+}
+
+li a.active {
+    background-color: rgb(50, 50, 131);
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(50, 50, 131);
+    color: white;
+}
+
+li a.sub-nav {
+    background-color: rgb(156, 156, 204);
+    font-size: 0.75em;
+    padding-left: 2em;
+    border-bottom: 0.01em solid whitesmoke !important;
+    border-top: 0.01em solid whitesmoke !important;
+}
+
+li a.sub-nav:hover {
+    font-size: 0.75em;
+    margin-left: 1em;
+    font-style: bold;
+}
+
+li a.sub-nav-active {
+    background-color: rgb(79, 79, 131);
+    color: white;
+    font-size: 0.75em;
+    padding-left: 2em;
+}
+
+li a.sub-nav-active:hover:not(.active) {
+    background-color: rgb(79, 79, 131);
+    color:white;
+}
+
+
+
+/***********************************************************************/
+
+/* PAGE LAYOUT STYLING W/ FLEX BOX *************************************/
+.main {
+    margin-left: 13em;
+    margin-right: 2em;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.flex-col1 {
+    flex-basis:auto;
+    border-right-color: gray;
+    border-right-style: solid;
+    border-right-width: 0.1em;
+    background-color: #f1f1f1;
+}
+
+.flex-col2 {
+    flex-basis:auto;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.vl {
+    border-left: 0.1em solid gray;
+    height: 100%;
+}
+/***********************************************************************/
+
+/* TEXT STYLING ********************************************************/
+h1 {
+    color: rgb(50, 50, 131);
+}
+
+h2 {
+    color: rgb(228, 149, 2);
+    padding-bottom: 0.5em;
+    border-bottom: 0.1em solid rgb(228, 149, 2)
+}
+strong {
+    color: green;
+}
+
+h3 {
+    color: green;
+}
+
+a {
+    color: rgb(0, 0, 255);
+}
+
+a:hover{
+    color: orange;
+}
+
+#aboutMe-lables-text {
+    min-height: 15em;
+}
+
+.text-list-r {
+    min-height: 12em;
+    border-top: 0.1em solid black;
+    padding-top: 1em;
+}
+/***********************************************************************/
+
+#banner {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    top: 0;
+    left: 0;
+}
+
+#headshot {
+    display: inline;
+    float: left;
+    width: 15em;
+    height: 15em;
+    margin-right: 1em;
+}
+
+.list-r {
+    width: 10em;
+    height: 10em;
+    float: right;
+    padding: none;
+    margin-left: 0.5em;
+    border: 0.1em dashed black;
+    border-radius: 50%;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 1em;
+}
+
+button:hover {
+    background-color: rgb(1, 66, 1);
+}
+
+button:disabled {
+    background-color: rgb(1, 66, 1);
+    color: gray;
+}
+
+.question-box {
+    border: 0.1em solid green;
+    margin: 2em;
+    margin-top: none;
+    padding: 1em;
+}
+
+#quiz-head {
+    text-align: center;
+    margin: 1em;
+}
+
+#quiz-description {
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+/* STYLE FLEX CONTAINER */
+.question {
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
+}
+    
+/* STYLE FLEX ITEM */
+.answer-choice {
+    margin: 0.5em;
+}
